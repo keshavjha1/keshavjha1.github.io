@@ -1,18 +1,32 @@
-site_name: My Docs
+site_name: Keshav's Docs
 theme: 
   name: material
+  language: en
+  font:
+    text: Roboto
+    code: Roboto Mono
   palette:
-    primary: purple 
+    primary: blue 
+  features:
+    - navigation.tabs
+    - navigation.footer
 
 plugins:
-  - blog:
-      blog_dir: blog
-      blog_toc: true
-      post_date_format: full
-      post_url_format: "{date}/{slug}"
-      post_url_max_categories: 2
-      post_slugify_separator: "-"
-      post_readtime: false
-      draft: true
+  - search:
+      separator: '[\s\-\.]+'
+  - blog
+  - tags
 
-     
+extra:
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/linkedin 
+      link: https://www.linkedin.com/in/kesjha/
