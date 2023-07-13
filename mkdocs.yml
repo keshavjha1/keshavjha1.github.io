@@ -1,4 +1,5 @@
 site_name: Keshav's Docs
+site_author: Keshav Jha
 theme: 
   name: material
   language: en
@@ -6,27 +7,67 @@ theme:
     text: Roboto
     code: Roboto Mono
   palette:
-    primary: blue 
+    - scheme: default
+      primary: green
+      accent: light blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    
   features:
-    - navigation.tabs
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
     - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
 
 plugins:
   - search:
       separator: '[\s\-\.]+'
-  - blog
+  - blog:
+      post_date_format: full
   - tags
 
 extra:
-  consent:
-    title: Cookie consent
-    description: >- 
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
-  version:
-    provider: mike
+  generator: false
   social:
     - icon: fontawesome/brands/linkedin 
       link: https://www.linkedin.com/in/kesjha/
+    - icon: fontawesome/brands/github
+      link: https://github.com/keshavjha1
+    - icon: fontawesome/brands/docker
+      link: https://www.linkedin.com/in/kesjha/
+    - icon: fontawesome/brands/python
+      link: https://www.linkedin.com/in/kesjha/
+    - icon: fontawesome/brands/mastodon
+      link: https://www.linkedin.com/in/kesjha/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/KeshavJha_
+# Page tree
+
+# Copyright
+copyright: Copyright &copy; 2016 - 2023 Keshav Jha
+# Extensions
