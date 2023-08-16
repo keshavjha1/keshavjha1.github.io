@@ -68,6 +68,17 @@ extra:
       link: https://twitter.com/KeshavJha_
 # Page tree
 
+
+nav:
+  - index.md
+  - Blog:
+    - blog/index.md
+  - Artificial intelligence:
+    - Artificial intelligence/
+  - Industry-Trends:  
+    - Industry-Trends/Full-stack-obsrvability.md
+    - Industry-Trends/Full-stack-obsrvability-copy.md
 # Copyright
 copyright: Copyright &copy; 2016 - 2023 Keshav Jha
 # Extensions
+
